@@ -1,0 +1,5 @@
+(executable
+ (name dayN)
+ (libraries utils)
+ (promote (until-clean))
+ (modules DayN))

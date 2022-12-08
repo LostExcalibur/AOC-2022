@@ -1,0 +1,5 @@
+(executable
+ (name day2)
+ (libraries utils)
+ (promote (until-clean))
+ (modules Day2))
