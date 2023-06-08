@@ -67,8 +67,8 @@ let solve (filename : string) : unit =
   let maxi = filename |> Utils.read_file |> String.split_on_char '\n' in
   Format.printf "Input File : %s\n" filename;
   let res, time = Utils.time part_one maxi in
-  Format.printf "Part 1 : %s, ran in %fs%!\n" res time;
+  Format.printf "Part 1 : %s, ran in %fs\n%!" res time;
   let res, time = Utils.time part_two maxi in
-  Format.printf "Part 2 : %s, ran in %fs%!\n" res time
+  Format.printf "Part 2 : %s, ran in %fs\n%!" res time
 
 let () = Sys.argv |> Array.to_list |> List.tl |> List.iter solve
