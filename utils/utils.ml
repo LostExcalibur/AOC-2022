@@ -16,6 +16,10 @@ let sum (l : int list) : int =
   in
   tail_rec l 0
 
+let list_min (l : int list) : int =
+  match l with
+  | [] -> failwith "Cannot find minimum of empty list"
+  | t::q -> List.fold_left min t q 
 let split_chars s = List.init (String.length s) (String.get s)
 
 exception Utils_trouve of int
