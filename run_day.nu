@@ -4,7 +4,7 @@ def main [
     day: int
     --sample
     ] {
-        let dir = $"day($day | into string | str lpad -l 2 -c '0')"
+        let dir = $"day($day | into string | fill -a right -w 2 -c '0')"
         let name = $"day($day | into string)"
         let program = $"($dir)/($name).exe"
         if $sample {
